@@ -7,7 +7,7 @@ function inputSpeed(){
         alert ('Ok')
     } else if (carSpeed > 70){
         if (carSpeed >= 140){
-            alert ("Licesnse Suspended")
+            alert ("License Suspended")
         }
         for (let i = 0; i < (carSpeed % 70); i+=5){
             counter ++
