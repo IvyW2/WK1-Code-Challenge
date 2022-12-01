@@ -1,3 +1,6 @@
+//This is a function  calculate an individual’s Net Salary by getting the inputs of basic salary and benefits. 
+//It Calculates the payee (i.e. Tax), NHIFDeductions, NSSFDeductions, gross salary, and net salary. 
+
 let benefits;
 let salary;
 let NHIF;
