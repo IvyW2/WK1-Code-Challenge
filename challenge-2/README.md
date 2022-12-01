@@ -18,7 +18,7 @@ In order for you to use the content on this repo ensure you have the following:
         cd WK1-Code-Challenge
 - Open it in `Visual Studio Code` by using:
         code .
-- Navigate to the `/speed-detector.js` file to see the source code.
+- Navigate to the `/speed.js` file to see the source code.
 ## Running application
 To run the application, make sure to install required dependencies by running in the terminal:
         npm install
