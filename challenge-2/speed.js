@@ -20,6 +20,9 @@ function inputSpeed(){
         if (counter > 12){
             alert("LICENSE SUSPENDED!!!!!!")
         }
+    }else {
+        alert ('Kindly give a valid value')
     }
 }
 inputSpeed()
+window.location.reload();
