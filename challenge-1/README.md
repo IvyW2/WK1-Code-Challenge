@@ -35,14 +35,16 @@ Left click the `/grade.js` file to see the source code.
 ```
 ## Running application
 
-- To run the application, left click on the HTML file '/grade.html'. Run the HTML file by clicking the 'RUN' button at the top of the Visual Studio Code and select any Chromium based browser (Chrome) or Mozilla. After opening the web-browser user will be met with a cell where you can input the values (the students score). A grade will then be outputted.
-
-or 
+- To run the application
 
 ```bash
         Left click on the on the HTML file '/grade.html' to open it and open the live server to test it. 
 ```
 - Open the application on your browser 127.0.0.1:5500.
+
+Or 
+
+- Left click on the HTML file '/grade.html'. Run the HTML file by clicking the 'RUN' button at the top of the Visual Studio Code and select any Chromium based browser (Chrome) or Mozilla. After opening the web-browser user will be met with a cell where you can input the values (the students score). A grade will then be outputted.
 
 ## Technology used
 - HTML

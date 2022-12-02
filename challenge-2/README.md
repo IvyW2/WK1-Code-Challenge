@@ -33,15 +33,18 @@ In order for you to use the content on this repo ensure you have the following:
 Left click the `/speed.js` file to see the source code.
 ```
 ## Running application
-To run the application, make sure to install required dependencies by running in the terminal:
+
+- To run the application
+
 ```bash
-        npm install
+        Left click on the on the HTML file '/speed.html' to open it and open the live server to test it. 
 ```
-- Followed by
-```bash
-        node index.js
-```
--  User will then be promted to enter the speed of the car. A comment 'OK' or 'Liscence suspended' will then be generated or the points depending on the speed input.
+- Open the application on your browser 127.0.0.1:5500.
+
+Or
+
+- Left click on the HTML file '/speed.html'. Run the HTML file by clicking the 'RUN' button at the top of the Visual Studio Code and select any Chromium based browser (Chrome) or Mozilla. After opening the web-browser user will be met with a cell where you can input the values (the students score). A grade will then be outputted.
+
 # Author
 Project contributed to by:
 - [Ivy Wambugha] (https://github.com/IvyW2/)
