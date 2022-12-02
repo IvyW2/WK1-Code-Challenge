@@ -31,7 +31,7 @@ In order for you to use the content on this repo ensure you have the following:
 ```
 5. Open the `/grade.js` file
 ```bash
-Left click the `/grade.js` file to see the source code.
+Left click the `/grade.js` file to view the source code.
 ```
 ## Running application
 

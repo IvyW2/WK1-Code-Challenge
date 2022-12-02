@@ -23,7 +23,7 @@
      alert(" You scored an E")
     }
 else {
-    alert ('Kindly give valid values ')
+    alert ('Kindly give valid a value ')
 }
 
 window.location.reload();

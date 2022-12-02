@@ -20,7 +20,7 @@ function inputSpeed(){
         else if (carSpeed <135){
         for (let i = 0; i < (carSpeed % 70); i+=5){
             counter ++
-        } alert(`${counter} Points`)
+        } alert(`Warning ${counter} Points!`)
         if (counter > 12){
             alert("LICENSE SUSPENDED!!!!!!")
         }

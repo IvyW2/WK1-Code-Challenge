@@ -1,16 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    <script src="./net_salary.js"></script>
-</body>
-</html> -->
 <html>
 
 <head>
@@ -18,6 +5,7 @@
 </head>
 
 <body>
+    <h2> Please enter gross salary (basic salary + benefits)</h2>
     <form name="form" onsubmit="return(getNetSalary());">
         <table cellspacing="2" cellpadding="2" border="1">
 
@@ -53,24 +41,23 @@
                 return false;
             }
 
-            //convert the input string to float(decimal value)
+            //convert the input string to float- a decimal value
            var gross = parseFloat(gross_salary);
             // calculate the net salary from the input string.
-            //the taxrate and nhifDeduction functions will be explained outside this function
+            //the tax rate and nhifDeduction functions will be expounded on outside this function
             var net_salary = gross-nssfDeduction-(gross*taxRate(gross))-(nhifDeduction(gross));
 
 
-           
-            //here we show an alert of the calculated net salary using js alert function
+           //an alert pops up of the calculated net salary
             alert('net salary: '+net_salary)
             return false;
         }
 
         //the taxrate function takes the gross salary as a parameter which we passed from the getNetsalary function
         function taxRate(gross) {
-            //this is a basic if check that returns the appropriate tax rate
+            //this if check returns the appropriate tax rate
             if (gross <= 24000) {
-                // .1 could be written as 0.1 or 10/100 😁. just a fancy(lazy) way of doing it
+                // .1 could be written as 0.1 or 10/100
                 return .1;
             }
             else if (gross > 24000 && gross <= 32333) {

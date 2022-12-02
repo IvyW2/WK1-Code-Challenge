@@ -1,128 +1,104 @@
-//This is a function  calculate an individual’s Net Salary by getting the inputs of basic salary and benefits. 
-//It Calculates the payee (i.e. Tax), NHIFDeductions, NSSFDeductions, gross salary, and net salary. 
+//This is a function that calculates an individual’s Net Salary by getting the input of gross salary (basic salary + benefits). 
+//It calculates the payee (i.e. Tax), NHIFDeductions, NSSFDeductions, gross salary, and net salary. 
+// This same code is in line with the html file. Use the html file to run the code.
+//This file is just a clear presentation of the source code itself without much "noise"
 
-/*let benefits;
-let salary;
-let NHIF;
-let NSSF;
-let PAYE;
-function salCalc(salary, benefits){
-    let gross = salary + benefits;
-    let NSSF = gross * 0.06;
-    // let netCalculator = gross;
-if (gross <= 24000) {
-        PAYE = (gross*0.1)
+function getNetSalary() {
+            
+    var gross_salary = document.form.gross_salary.value;
+    //check if input string is a number
+    if (isNaN(gross_salary)) {
+        alert("input should only include numbers");
+        return false;
     }
-    else if (gross >= 32333) {
-       PAYE = (gross*0.3)
+    //check whether input string is empty
+    //the length function here is used to check whether the object in the input is empty
+    if (gross_salary.length == "") {
+        alert("messagebox is empty");
+        return false;
     }
-    else if (gross >= 24001) {
-        PAYE = (gross*0.25)
-    }
-console.log('Gross salary:', gross)
- console.log('PAYE deductions:', PAYE)
- console.log('NSSF deduction:', NSSF)
-//NHIF
-        if (gross <= 5999 ){
-            NHIF = (150)}
-        else if (gross > 6000 && gross <= 7999) {
-            NHIF = (300)}
-        else if( gross > 8000 && gross <= 11999){
-            NHIF = (400)}
-        else if ( gross > 12000 && gross <= 14999) {
-            NHIF = (500) }
-        else if (gross > 15000 && gross <= 19999) {
-            NHIF = (600) }
-        else if(gross > 15000 && gross <= 24999) {
-            NHIF =  (750)}
-        else if( gross > 25000 && gross <= 29999){
-            NHIF = (850)}
-        else if (gross > 30000 && gross <= 34999) {
-            NHIF = (900) }
-        else if (gross > 35000 && gross <= 39999) {
-            NHIF = (950) }
-        else if (gross > 40000 && gross <= 44999) {
-            NHIF =(1000) }
-        else if (gross > 45000 && gross <= 49999) {
-            NHIF = (1100) }
-        else if  (gross > 50000 && gross <= 59999){
-            NHIF = (1200) }
-        else if (gross > 60000 && gross <= 69999) {
-            NHIF = (1300) }
-        else if (gross > 70000 && gross <= 79999) {
-            NHIF = (1400) }
-        else if  (gross > 80000 && gross <= 89999) {
-            NHIF = (1500) }
-        else if (gross > 90000 && gross <= 99999) {
-            NHIF = (1600) }
-        else if (gross >= 100000) {
-            NHIF = (1700)
-    console.log('NHIF deduction:', NHIF)
-    console.log('Taxes: PAYE + NSSF + NHIF :', (NSSF + PAYE + NHIF ))
-    let netSalary = 'Net Salary:  ' + (gross - (NSSF + PAYE + NHIF ))
-    return netSalary;
+
+    //convert the input string to float- a decimal value
+   var gross = parseFloat(gross_salary);
+    // calculate the net salary from the input string.
+    //the tax rate and nhifDeduction functions will be expounded on outside this function
+    var net_salary = gross-nssfDeduction-(gross*taxRate(gross))-(nhifDeduction(gross));
+
+
+   //an alert pops up of the calculated net salary
+    alert('net salary: '+net_salary)
+    return false;
 }
+
+//the taxrate function takes the gross salary as a parameter which we passed from the getNetsalary function
+function taxRate(gross) {
+    //this if check returns the appropriate tax rate
+    if (gross <= 24000) {
+        // .1 could be written as 0.1 or 10/100
+        return .1;
+    }
+    else if (gross > 24000 && gross <= 32333) {
+        return .25;
+    }
+    else {
+        return .3;
+    }
+
 }
-       console.log(salCalc(100000, 5000));
- */
-       const prompt = require("prompt-sync")();
-       var basic_salary = parseInt(basic_salary);
-       basic_salary = alert("Enter your basic salary  ");
-       var benefits = parseInt(benefits);
-       benefits = prompt("Enter your benefits  ");
-       benefits = parseInt(benefits);
-       var gross_salary = parseInt(basic_salary) + parseInt(benefits);
-       //
-       var payee = parseInt(payee);
-       if (gross_salary <= 24000) {
-         payee === gross_salary * 0.1;
-       } else if (gross_salary > 24000 && gross_salary <= 32333) {
-         payee === gross_salary * 0.25;
-       } else {
-         payee === gross_salary * 0.3;
-       }
-       var NSSF = parseInt(NSSF);
-       NSSF === (gross_salary * 6) / 100;
-       var NHIF = parseInt(NHIF);
-       if (gross_salary >= 0 && gross_salary <= 5999) {
-         NHIF === 150;
-       } else if (gross_salary >= 6000 && gross_salary <= 7999) {
-         NHIF === 300;
-       } else if (gross_salary >= 8000 && gross_salary <= 11999) {
-         NHIF === 400;
-       } else if (gross_salary >= 12000 && gross_salary <= 14999) {
-         NHIF === 500;
-       } else if (gross_salary >= 15000 && gross_salary <= 19999) {
-         NHIF === 600;
-       } else if (gross_salary >= 20000 && gross_salary <= 24999) {
-         NHIF === 750;
-       } else if (gross_salary >= 25000 && gross_salary <= 29999) {
-         NHIF === 850;
-       } else if (gross_salary >= 30000 && gross_salary <= 34999) {
-         NHIF === 900;
-       } else if (gross_salary >= 35000 && gross_salary <= 39999) {
-         NHIF === 950;
-       } else if (gross_salary >= 40000 && gross_salary <= 44999) {
-         NHIF === 1000;
-       } else if (gross_salary >= 45000 && gross_salary <= 49999) {
-         NHIF === 1100;
-       } else if (gross_salary >= 50000 && gross_salary <= 59999) {
-         NHIF === 1200;
-       } else if (gross_salary >= 60000 && gross_salary <= 69999) {
-         NHIF === 1300;
-       } else if (gross_salary >= 70000 && gross_salary <= 79999) {
-         NHIF === 1400;
-       } else if (gross_salary >= 80000 && gross_salary <= 89999) {
-         NHIF === 1500;
-       } else if (gross_salary >= 90000 && gross_salary <= 99999) {
-         NHIF === 1600;
-       } else {
-         NHIF === 1700;
-       }
-       var Total_deduction = parseInt(Total_deduction);
-       Total_deduction = payee + NSSF + NHIF;
-       var net_income = parseInt(net_income);
-       net_income === parseInt(gross_salary - Total_deduction);
-       console.log("Your gross salary is " + gross_salary);
-       console.log("Total amount to be deducted is" + Total_deduction);
-       console.log("Your net income  is " + net_income);      
+// since the nssf deduction is a fixed value. we decalre a constant value for it
+const nssfDeduction = 400;
+function nhifDeduction(gross) {
+    //same if check  to return appropriate deduction according to basic the gross salary
+    if (gross <= 5999) {
+        return 150;
+    }
+    else if (gross <= 7999) {
+        return 300;
+    }
+    else if (gross <= 11999) {
+        return 400;
+    }
+    else if (gross <= 14999) {
+        return 500;
+    }
+    else if (gross <= 19999) {
+        return 600;
+    }
+    else if (gross <= 24999) {
+        return 750;
+    }
+    else if (gross <= 29999) {
+        return 850;
+    }
+    else if (gross <= 34999) {
+        return 900;
+    }
+    else if (gross <= 39999) {
+        return 950;
+    }
+    else if (gross <= 44999) {
+        return 1000;
+    }
+    else if (gross <= 49999) {
+        return 1100;
+    }
+    else if (gross <= 59999) {
+        return 1200;
+    }
+    else if (gross <= 69999) {
+        return 1300;
+    }
+    else if (gross <= 79999) {
+        return 1400;
+    }
+    else if (gross <= 89999) {
+        return 1500;
+    }
+    else if (gross <= 99999) {
+        return 1600;
+    }
+    else {
+        return 1700;
+    }
+
+}

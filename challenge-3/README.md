@@ -33,15 +33,12 @@ In order for you to use the content on this repo ensure you have the following:
 Left click the `/net_salary.js` file to see the source code.
 ```
 ## Running application
-To run the application, run the command:
+- To run the application
+
 ```bash
-        npm install
+        Left click on the on the HTML file '/grade.html' to open it and open the live server to test it. 
 ```
-- Followed by
-```bash
-        node index.js
-```
--  User should then input basic salary and benefits. 
+- Open the application on your browser 127.0.0.1:5500.
 
 # Author
 Project contributed to by:
