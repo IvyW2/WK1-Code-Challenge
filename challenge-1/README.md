@@ -52,7 +52,7 @@ Or
 
 ## Author
 Project contributed to by:
-- [Ivy Wambugha] (https://github.com/IvyW2/)
+- [Ivy Wambugha](https://github.com/IvyW2/)
 
 ## Licence
 ISC licence
