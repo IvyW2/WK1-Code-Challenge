@@ -1,17 +1,22 @@
 # Student Grade Generator
 
 ## Description
-In this folder 1 challenge has been tackled:
+- In this folder 1 challenge has been tackled:
             1. Challenge 1 - Student Grade Generator
--It is an application allows users to input student marks/scores and get back a grade depending on the scoring provided.
+- It is an application allows users to input student marks/scores and get back a grade depending on the scoring provided.
+
+## Live Link
+
+## User story
+- A user can enter the marks in the input field.
+- See the grade based on the marks entered.
 
 ## Project Setup:
-This is a code challenge that has bee handled using Javascript only.
+- This is a code challenge that has bee handled using Javascript only.
 In order for you to use the content on this repo ensure you have the following:
 - A computer running on either Windows 7+, Linux or Mac OS.
 
 ## Development prerequisites
-- Nodejs v16.18.1
 - Visual studio code.
 - Live server extension
 
@@ -19,7 +24,7 @@ In order for you to use the content on this repo ensure you have the following:
 1. Open a terminal/ comand line interphase on your computer
 2. clone the repo using the following command: 
 ```bash
-        git clone https://github.com/IvyW2/
+        git clone git@github.com:IvyW2/WK1-Code-Challenge.git
 ```
 3. Move to the folder using:
 ```bash
@@ -29,22 +34,9 @@ In order for you to use the content on this repo ensure you have the following:
 ```bash
         code .
 ```
-5. Open the `/grade.js` file
-```bash
-Left click the `/grade.js` file to view the source code.
-```
 ## Running application
 
-- To run the application
-
-```bash
-        Left click on the on the HTML file '/grade.html' to open it and open the live server to test it. 
-```
-- Open the application on your browser 127.0.0.1:5500.
-
-Or 
-
-- Left click on the HTML file '/grade.html'. Run the HTML file by clicking the 'RUN' button at the top of the Visual Studio Code and select any Chromium based browser (Chrome) or Mozilla. After opening the web-browser user will be met with a cell where you can input the values (the students score). A grade will then be outputted.
+- To run the application right click on the on the HTML file '/grade.html' on the primary side bar to open it and open the live server to test it. User will be met with a cell where you can input the values (the students score). A grade will then be outputted.
 
 ## Technology used
 - HTML
@@ -52,7 +44,7 @@ Or
 
 ## Author
 Project contributed to by:
-- [Ivy Wambugha] (https://github.com/IvyW2/)
+- [Ivy Wambugha](https://github.com/IvyW2/)
 
 ## Licence
 ISC licence
