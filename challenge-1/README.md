@@ -2,7 +2,7 @@
 
 ## Description
 - In this folder 1 challenge has been tackled:
-            1. Challenge 1 - Student Grade Generator
+             Challenge 1 - Student Grade Generator
 - It is an application allows users to input student marks/scores and get back a grade depending on the scoring provided.
 
 ## Live Link

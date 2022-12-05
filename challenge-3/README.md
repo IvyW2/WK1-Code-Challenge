@@ -2,7 +2,7 @@
 
 # DESCRIPTION
 In this folder 1 challenge has been tackled:
-            1.  Challenge 3 - Net Salary Calculator 
+         Challenge 3 - Net Salary Calculator 
 -It is an application  that calculates an individual’s Net Salary by getting the gross salary which is (basic salary + benefits). It calculate the payee (i.e. Tax), NHIFDeductions, NSSFDeductions, gross salary, and net salary. 
 
 ## Live Link
